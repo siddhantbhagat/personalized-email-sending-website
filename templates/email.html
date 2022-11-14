@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<title>Task Master</title>
+{% endblock %}
+
+{% block body %}
+<div class="email">
+    <h1 style="text-align: center"> Send Multimple Emails</h1>
+    <form action="/email", method="post">
+
+        <h3 style="text-align: center"> sender_email</h3>
+        <textarea rows = "1" cols = "60" name = "sender_email"></textarea><br>
+        <h3 style="text-align: center"> 
+            Enter <a href="https://support.google.com/accounts/answer/185833?hl=en">App password</a> for secure login
+        </h3>
+        <textarea rows = "1" cols = "60" name = "password"></textarea><br>
+
+        <h3 style="text-align: center"> Enter list of Emails</h3>
+        <!-- <input type="text" name="Emails" id="Email_list"> -->
+        <textarea rows = "1" cols = "60" name = "emails">trades123sks@gmail.com</textarea><br>
+        <!-- <input type="submit" value="Upload Email list"> -->
+        
+        <h3 style="text-align: center"> Enter subject</h3>
+        <!-- <input type="text" name="Subject" id="Subject"> -->
+        <textarea rows = "1" cols = "60" name = "subject"></textarea><br>
+        <!-- <input type="submit" value="Upload Subject"> -->
+        
+        <h3 style="text-align: center"> Enter Email body</h3>
+        <!-- <input type="text" name="body" id="body"> -->
+        <textarea rows = "10" cols = "60" name = "body"></textarea><br><br>
+        <input type="submit" value="Send Emails">
+        
+    </form>
+</div>
+
+{% endblock %}

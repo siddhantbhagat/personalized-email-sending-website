@@ -1,0 +1,16 @@
+body{
+    margin: 0;
+    font-family: sans-serif;
+}
+
+form{
+    align-items: center;
+    text-align: center;
+    
+}
+
+/* form1{
+    align-items: left;
+    text-align: left;
+    
+} */
